@@ -6,10 +6,11 @@
 //  Copyright © 2019 Stefan Diaconu. All rights reserved.
 //
 
-#include <iostream>
+#include "std_lib_facilities.h"
 
-int main(int argc, const char * argv[]) {
-    // insert code here...
-    std::cout << "Hello, World!\n";
+int main()
+{
+    cout<<"Hello, World!\n";
+    keep_window_open();
     return 0;
 }
