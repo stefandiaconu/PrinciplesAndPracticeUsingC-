@@ -1,19 +1,16 @@
 //
-//  main.cpp
+//  my.h
 //  Ch08TheDrill
 //
 //  Created by Stefan Diaconu on 23/04/2019.
 //  Copyright © 2019 Stefan Diaconu. All rights reserved.
 //
 
-#include "my.h"
+#ifndef my_h
+#define my_h
 
-int foo = 7;
+extern int foo;
+void print_foo();
+void print(int);
 
-int main()
-{
-    print_foo();
-    print(99);
-    
-    return 0;
-}
+#endif /* my_h */

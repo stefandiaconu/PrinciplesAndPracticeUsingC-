@@ -1,5 +1,5 @@
 //
-//  main.cpp
+//  my.cpp
 //  Ch08TheDrill
 //
 //  Created by Stefan Diaconu on 23/04/2019.
@@ -7,13 +7,14 @@
 //
 
 #include "my.h"
+#include "../../std_lib_facilities.h"
 
-int foo = 7;
-
-int main()
+void print_foo()
 {
-    print_foo();
-    print(99);
-    
-    return 0;
+    cout << foo << endl;
+}
+
+void print(int i)
+{
+    cout << i << endl;
 }
