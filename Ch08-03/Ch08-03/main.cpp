@@ -40,7 +40,7 @@ vector<int> fibonacci(int x, int y, vector<int> v, int n)
 int main() {
     // insert code here...
     vector<int> emptyVector;
-    vector<int> v = fibonacci(1, 2, emptyVector, 10);
+    vector<int> v = fibonacci(1, 2, emptyVector, 45);
     
     print("Label", v);
 }
