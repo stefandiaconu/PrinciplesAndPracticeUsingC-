@@ -9,28 +9,23 @@
 #include <iostream>
 #include "../../std_lib_facilities.h"
 
-double compute(vector<double> price, vector<double> weight)
+int maxv(vector<int> v)
 {
-    double sum = 0;
+    int max = 0;
     
-    for (int i = 0; i < price.size(); ++i) {
-        sum += price[i] * weight[i];
+    for (int i = 0; i < v.size(); ++i) {
+        if (v[i] > max)
+            max = v[i];
     }
     
-    return sum;
+    return max;
 }
 
 int main() {
     // insert code here...
-    vector<double> price = {1, 2, 3};
-    vector<double> weight = {1, 2, 3};
-    double sum = 0.0;
-    if (price.size() == weight.size()) {
-        sum = compute(price, weight);
-    }
-    else {
-        cout << "The two vectors aree not equal" << endl;
-    }
+    vector<int> v = {44, 12, 5, 4};
+    int max;
+    max = maxv(v);
+    cout << "Max: " << max << endl;
     
-    cout << "Sum: " << sum << endl;
 }
