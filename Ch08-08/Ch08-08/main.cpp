@@ -1,6 +1,6 @@
 //
 //  main.cpp
-//  Ch08-07
+//  Ch08-08
 //
 //  Created by Stefan Diaconu on 28/04/2019.
 //  Copyright © 2019 Stefan Diaconu. All rights reserved.
@@ -17,16 +17,18 @@ int main() {
     double a;
     int count = 0;
     
-    while (count < 5) {
+    while (cin) {
         cout << "Please enter a name: " << endl;
         cin >> n;
+        if (n == "x")
+            break;
         name.push_back(n);
         count++;
     }
-    
+
     count = 0;
     
-    while (count < 5) {
+    while (count < name.size()) {
         cout << "Please enter an age: " << endl;
         cin >> a;
         age.push_back(a);
