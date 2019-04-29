@@ -75,4 +75,6 @@ int main() {
     for (int i=0; i<vs2.size(); i++) {
         cout << vs2[i] << "," << endl;
     }
+    
+    return 0;
 }

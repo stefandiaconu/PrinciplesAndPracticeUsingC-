@@ -28,4 +28,5 @@ int main() {
     max = maxv(v);
     cout << "Max: " << max << endl;
     
+    return 0;
 }

@@ -33,4 +33,6 @@ int main() {
     }
     
     cout << "Sum: " << sum << endl;
+    
+    return 0;
 }

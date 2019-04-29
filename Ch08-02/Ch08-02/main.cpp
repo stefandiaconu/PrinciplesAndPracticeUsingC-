@@ -20,4 +20,6 @@ int main() {
     // insert code here...
     vector<int> v = {1, 2, 3, 4, 5};
     print("Label", v);
+    
+    return 0;
 }

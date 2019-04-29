@@ -43,4 +43,6 @@ int main() {
     vector<int> v = fibonacci(1, 2, emptyVector, 45);
     
     print("Label", v);
+    
+    return 0;
 }

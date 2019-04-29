@@ -96,4 +96,6 @@ int main() {
     x result;
     result = functionReturnStruct(v);
     cout << "Small: " << result.small << ", max: " << result.max << ", mean: " << result.mean << ", median: " << result.median << endl;
+    
+    return 0;
 }
