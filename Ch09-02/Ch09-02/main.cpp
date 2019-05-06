@@ -6,10 +6,19 @@
 //  Copyright © 2019 Stefan Diaconu. All rights reserved.
 //
 
-#include <iostream>
+#include "Name.h"
 
-int main(int argc, const char * argv[]) {
+int main() {
     // insert code here...
-    std::cout << "Hello, World!\n";
+    Name name;
+    name.read_names();
+    name.read_ages();
+    name.print();
+    cout << endl;
+    name.sort_names();
+    name.print();
+    cout << endl;
+    cout << name << endl;
+    
     return 0;
 }
