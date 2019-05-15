@@ -8,7 +8,6 @@
 
 #include "Book.h"
 #include <regex>
-using namespace std;
 
 Book::Book(string ii, string tt, string aa, string copyright)
     :i(ii), t(tt), a(aa), copyright(copyright)
@@ -39,4 +38,19 @@ string Book::isbn() const
         return i;
     else
         return "Not a valid ISBN";
+}
+
+bool operator==(const Book& a, const Book& b)
+{
+    return a.isbn()==b.isbn();
+}
+
+bool operator!=(const Book& a, const Book& b)
+{
+    return !(a==b);
+}
+
+ostream& operator<<(ostream& os, const Book& a)
+{
+    return os << "Title: " << a.title() << '\n' << "Author: " << a.author() << '\n' << "ISBN: " << a.isbn();
 }

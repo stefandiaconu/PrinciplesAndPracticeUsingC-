@@ -10,6 +10,7 @@
 #define Book_h
 #include <iostream>
 #include <string>
+using namespace std;
 
 class Book {
 public:
@@ -17,17 +18,21 @@ public:
     Book();
     ~Book();
     
-    std::string isbn() const;
-    std::string title() const { return t; };
-    std::string author() const { return a; };
-    std::string copyright_date() const { return copyright; };
+    string isbn() const;
+    string title() const { return t; };
+    string author() const { return a; };
+    string copyright_date() const { return copyright; };
     
-    std::string is_checked_out(bool is_checked);
+    string is_checked_out(bool is_checked);
 private:
-    std::string i;                   // isbn
-    std::string t;                   // title
-    std::string a;                   // author
-    std::string copyright;           // copyright date
+    string i;                   // isbn
+    string t;                   // title
+    string a;                   // author
+    string copyright;           // copyright date
 };
+
+bool operator==(const Book& a, const Book& b);
+bool operator!=(const Book& a, const Book& b);
+ostream& operator<<(ostream& os, const Book& a);
 
 #endif /* Book_h */
