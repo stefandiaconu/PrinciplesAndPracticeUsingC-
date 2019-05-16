@@ -10,7 +10,7 @@
 
 int main(int argc, char *argv[]) {
     // insert code here...
-    Book book{"999-888-777-P","Moby Dick","Herman Melville","22.05.2018"};
+    Book book{"999-888-777-P","Moby Dick","Herman Melville","22.05.2018",Book::Genre::periodical};
     string checked_out = book.is_checked_out(false);
 
     cout << "Book ISBN: " <<  book.isbn() << ", book title: " << book.title() << ", book author: " << book.author() << ", book copyright date: " << book.copyright_date() << ", book checked out? " << checked_out << std::endl;

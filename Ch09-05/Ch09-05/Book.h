@@ -13,8 +13,14 @@
 using namespace std;
 
 class Book {
+    
 public:
-    Book(std::string i, std::string t, std::string a, std::string copyright);
+    
+    enum Genre {
+        fiction = 1, nonfiction, periodical, biography, children
+    };
+    
+    Book(std::string i, std::string t, std::string a, std::string copyright, Genre gen);
     Book();
     ~Book();
     
@@ -22,6 +28,7 @@ public:
     string title() const { return t; };
     string author() const { return a; };
     string copyright_date() const { return copyright; };
+    Genre genre() const { return gen; };
     
     string is_checked_out(bool is_checked);
 private:
@@ -29,6 +36,7 @@ private:
     string t;                   // title
     string a;                   // author
     string copyright;           // copyright date
+    Genre gen;
 };
 
 bool operator==(const Book& a, const Book& b);

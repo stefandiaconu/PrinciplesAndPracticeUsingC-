@@ -9,8 +9,8 @@
 #include "Book.h"
 #include <regex>
 
-Book::Book(string ii, string tt, string aa, string copyright)
-    :i(ii), t(tt), a(aa), copyright(copyright)
+Book::Book(string ii, string tt, string aa, string copyright, Genre gen)
+    :i(ii), t(tt), a(aa), copyright(copyright), gen(gen)
 {
 }
 
@@ -52,5 +52,27 @@ bool operator!=(const Book& a, const Book& b)
 
 ostream& operator<<(ostream& os, const Book& a)
 {
-    return os << "Title: " << a.title() << '\n' << "Author: " << a.author() << '\n' << "ISBN: " << a.isbn();
+    string type;
+    switch (a.genre()) {
+        case 1:
+            type = "fiction";
+            break;
+        case 2:
+            type = "nonfiction";
+            break;
+        case 3:
+            type = "periodical";
+            break;
+        case 4:
+            type = "biography";
+            break;
+        case 5:
+            type = "children";
+            break;
+            
+        default:
+            type = "Not a genre";
+            break;
+    }
+    return os << "Title: " << a.title() << "\nAuthor: " << a.author() << "\nISBN: " << a.isbn() << "\nGenre: " << type;
 }
