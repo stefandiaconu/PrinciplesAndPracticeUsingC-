@@ -20,7 +20,7 @@ public:
         fiction = 1, nonfiction, periodical, biography, children
     };
     
-    Book(std::string i, std::string t, std::string a, std::string copyright, Genre gen);
+    Book(string i, string t, string a, string copyright, Genre gen);
     Book();
     ~Book();
     

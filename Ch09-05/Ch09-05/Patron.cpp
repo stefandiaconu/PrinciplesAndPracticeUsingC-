@@ -1,0 +1,37 @@
+//
+//  Patron.cpp
+//  Ch09-05
+//
+//  Created by Stefan Diaconu on 27/05/2019.
+//  Copyright © 2019 Stefan Diaconu. All rights reserved.
+//
+
+#include "Patron.h"
+
+Patron::Patron(string username, int card_number)
+    :u_name(username), c_number(card_number)
+{
+}
+
+Patron::Patron()
+{
+}
+
+Patron::~Patron()
+{
+}
+
+void Patron::add_fee(int add_fee)
+{
+    l_fee = add_fee;
+}
+
+bool owe_fee(Patron& p)
+{
+    if (p.library_fee() != 0) {
+        return true;
+    }
+    else {
+        return false;
+    }
+}
