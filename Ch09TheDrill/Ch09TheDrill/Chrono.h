@@ -55,6 +55,8 @@ namespace Chrono {
     Day day_of_week(const Date& d);     // day of week of d
     Date next_Sunday(const Date d);     // next Sunday after d
     Date next_weekday(const Date& d);   // next weekday after d
+    Date next_workday(const Date& d);   // next weekday after d
+    Date week_of_year(const Date& d);   // next weekday after d
 }                                       // Chrono
 
 #endif /* Chrono_h */

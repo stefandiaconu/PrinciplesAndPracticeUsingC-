@@ -33,12 +33,36 @@ namespace Chrono {
     
     void Date::add_day(int n)
     {
-        //...
+        if (m==Month::feb && (d==28 || d==29)) {
+            add_month(n);
+            d = 1;
+        }
+        else if ((m==Month::apr || m==Month::jun || m==Month::sep || m==Month::nov) && d==30) {
+            add_month(n);
+            d = 1;
+        }
+        else {
+            add_month(n);
+            d = 1;
+        }
     }
     
     void Date::add_month(int n)
     {
-        //...
+        if (m==Month::dec) {
+            m = Month::jan;
+        }
+        else if ((m==Month::jan && !leapyear(y)) && (d==29 || d==30 || d==31)) {
+            d = 28;
+            m = static_cast<Month>(static_cast<int>(m) + n);
+        }
+        else if ((m==Month::jan && leapyear(y)) && (d==30 || d==31)) {
+            d = 29;
+            m = static_cast<Month>(static_cast<int>(m) + n);
+        }
+        else {
+            m = static_cast<Month>(static_cast<int>(m) + n);
+        }
     }
     
     void Date::add_year(int n)
@@ -75,14 +99,7 @@ namespace Chrono {
     
     bool leapyear(int y)
     {
-        if ((y % 4 == 0) && (y % 100 != 0))
-            return true;
-        else if ((y % 100 == 0) && (y % 400 != 0))
-            return true;
-        else if (y % 100 != 0)
-            return true;
-        else
-            return false;
+        return y % 4 == 0 && (y % 100 != 0 || y % 400 == 0);
     }
     
     bool operator==(const Date& a, const Date& b)
@@ -136,14 +153,46 @@ namespace Chrono {
         return d;
     }
     
+    Date next_workday(const Date& d) {
+        return {};
+    }
+    
+    Date week_of_year(const Date& d) {
+        return {};
+    }
+    
 }   /// Chrono
 
 int main(int argc, char *argv[]) {
     // insert code here...
     /* 9.7.1 */
-    Chrono::Date d{2005,Chrono::Month::feb,29};
+    Chrono::Date d{2004,Chrono::Month::feb,29};
     
     cout << d << endl;
+    
+    d.add_year(1);
+    
+    cout << d << endl;
+    
+    d.add_month(1);
+    
+    cout << d << endl;
+    
+    Chrono::Date d2{2005,Chrono::Month::jan,28};
+    
+    cout << d2 << endl;
+    
+    d2.add_month(1);
+    
+    cout << d2 << endl;
+    
+    Chrono::Date d3{2004,Chrono::Month::mar,31};
+    
+    cout << d3 << endl;
+    
+    d3.add_day(1);
+    
+    cout << d3 << endl;
     
     return 0;
 }
