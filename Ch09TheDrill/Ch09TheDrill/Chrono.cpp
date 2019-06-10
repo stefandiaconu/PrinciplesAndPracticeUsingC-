@@ -20,7 +20,7 @@ namespace Chrono {
     
     const Date& default_date()
     {
-        static Date dd {2001, Month::jan, 1};   // start of the 21st century
+        static Date dd {1970, Month::jan, 1};   // start of the 21st century
         return dd;
     }
     
@@ -154,10 +154,12 @@ namespace Chrono {
     }
     
     Date next_workday(const Date& d) {
+        //...
         return {};
     }
     
     Date week_of_year(const Date& d) {
+        //...
         return {};
     }
     
@@ -193,6 +195,7 @@ int main(int argc, char *argv[]) {
     d3.add_day(1);
     
     cout << d3 << endl;
+    cout << endl;
     
     return 0;
 }
