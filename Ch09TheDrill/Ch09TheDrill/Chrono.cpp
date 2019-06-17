@@ -197,5 +197,9 @@ int main(int argc, char *argv[]) {
     cout << d3 << endl;
     cout << endl;
     
+    Chrono::Date d4;
+    cin >> d4;
+    cout << d4 << endl;
+    
     return 0;
 }
