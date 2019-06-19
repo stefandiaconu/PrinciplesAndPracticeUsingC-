@@ -77,5 +77,27 @@ int main(int argc, const char * argv[]) {
         cout << temps[i] << endl;
     }
     
+    // calculate mean
+    vector<double> temps2;
+    for (int i=0; i<temps.size(); ++i) {
+        temps2.push_back(temps[i].temperature);
+    }
+    
+    double mean;
+    double sum = 0.0;
+    for (double n: temps2) {
+        sum += n;
+    }
+    mean = sum / temps2.size();
+    cout << "Sum: " << sum << endl;
+    cout << "Mean: " << mean << endl;
+    
+    // calculate median
+    cout << "25: " << temps2[round(temps2.size() / 2)] << ", 26: " << temps2[round(temps2.size() / 2) + 1] << endl;
+    cout << "25: " << temps2[25] << endl;
+    cout << "26: " << temps2[26] << endl;
+    double median = (temps2[round(temps2.size() / 2)] + temps2[round(temps2.size() / 2) + 1]) / 2;
+    cout << "Median: " << median << endl;
+    
     return 0;
 }
