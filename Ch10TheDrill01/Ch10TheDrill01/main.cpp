@@ -67,7 +67,7 @@ int main() {
     
     // The Drill - 04
     ofstream ost;
-    ost.open("mydata.txt",ios_base::in);
+    ost.open("mydata.txt",ios_base::in | ios_base::app);
     cout << sizeof(ost) << endl;
     for (int i=0; i<original_points.size(); ++i) {
         ost << original_points[i];
