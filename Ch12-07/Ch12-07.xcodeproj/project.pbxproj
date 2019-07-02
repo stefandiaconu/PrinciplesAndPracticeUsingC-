@@ -43,6 +43,7 @@
 		C7B3DE6B22CB37BF00C0F2B7 /* GUI.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = GUI.h; path = ../GUI.h; sourceTree = "<group>"; };
 		C7B3DE6C22CB37BF00C0F2B7 /* Simple_window.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = Simple_window.cpp; path = ../Simple_window.cpp; sourceTree = "<group>"; };
 		C7B3DE6D22CB37BF00C0F2B7 /* Window.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = Window.cpp; path = ../Window.cpp; sourceTree = "<group>"; };
+		C7B3DE7722CBEFF600C0F2B7 /* image.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = image.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,6 +85,7 @@
 		C7B3DE5D22CB377900C0F2B7 /* Ch12-07 */ = {
 			isa = PBXGroup;
 			children = (
+				C7B3DE7722CBEFF600C0F2B7 /* image.jpg */,
 				C7B3DE5E22CB377900C0F2B7 /* main.cpp */,
 			);
 			path = "Ch12-07";

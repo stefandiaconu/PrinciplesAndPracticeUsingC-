@@ -58,6 +58,11 @@ int main(int argc, const char * argv[]) {
     win.attach(c3);
     win.attach(c4);
     win.attach(c5);
+    win.wait_for_button();
+    
+    //************ Exercise 09 ***************//
+    Image i{Point{300,200},"imagee.jpg"};
+    win.attach(i);
     
     win.wait_for_button();
     
