@@ -367,8 +367,8 @@ Function::Function(Fct f, double r1, double r2, Point xy,
 bool can_open(const string& s)
 // check if a file named s exists and can be opened for reading
 {
-    ifstream ff(s.c_str());
-    return (ff) ? true : false;
+    ifstream ff(s);
+    return ff.is_open();
 }
 
 //------------------------------------------------------------------------------
