@@ -43,15 +43,15 @@ int main(int argc, const char * argv[]) {
     win.wait_for_button();
     
     // Create image
-    Image i1{Point{200,0},"seal.jpg"};
+    Image i1{Point{200,0},"ying.png"};
     win.attach(i1);
-    Image i2{Point{0,200},"seal.jpg"};
+    Image i2{Point{0,200},"ying.png"};
     win.attach(i2);
-    Image i3{Point{400,600},"seal.jpg"};
+    Image i3{Point{400,600},"ying.png"};
     win.attach(i3);
     
     // Move image from square to square
-    Image i4{Point{x_grid,y_grid},"smile.jpg"};
+    Image i4{Point{x_grid,y_grid},"ying.png"};
     win.attach(i4);
     int x = 0;
     int y = 0;

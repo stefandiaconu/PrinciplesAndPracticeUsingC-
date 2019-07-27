@@ -6,6 +6,7 @@
 
 #include <FL/Fl_GIF_Image.H>
 #include <FL/Fl_JPEG_Image.H>
+#include <FL/Fl_PNG_Image.H>
 #include "Graph.h"
 
 //------------------------------------------------------------------------------
@@ -367,7 +368,7 @@ Function::Function(Fct f, double r1, double r2, Point xy,
 bool can_open(const string& s)
 // check if a file named s exists and can be opened for reading
 {
-    ifstream ff(s);
+    ifstream ff(s.c_str());
     return ff.is_open();
 }
 
@@ -385,8 +386,9 @@ Suffix::Encoding get_encoding(const string& s)
 
     static SuffixMap smap[] = {
         {".jpg",  Suffix::jpg},
-        {".jpeg", Suffix::jpg},
+        {".jpeg", Suffix::jpeg},
         {".gif",  Suffix::gif},
+        {".png",  Suffix::png},
     };
 
     for (int i = 0, n = ARRAY_SIZE(smap); i < n; i++)
@@ -421,8 +423,14 @@ Image::Image(Point xy, string s, Suffix::Encoding e)
     case Suffix::jpg:
         p = new Fl_JPEG_Image(s.c_str());
         break;
+    case Suffix::jpeg:
+        p = new Fl_JPEG_Image(s.c_str());
+        break;
     case Suffix::gif:
         p = new Fl_GIF_Image(s.c_str());
+        break;
+    case Suffix::png:
+        p = new Fl_PNG_Image(s.c_str());
         break;
     default:    // Unsupported image encoding
         fn.set_label("unsupported file type \""+s+'\"');

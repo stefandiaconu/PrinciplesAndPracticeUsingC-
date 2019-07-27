@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C718747722E4D5FD006BAE28 /* airplane.jpeg in Sources */ = {isa = PBXBuildFile; fileRef = C718747622E4D5F5006BAE28 /* airplane.jpeg */; };
+		C718747822E4D5FD006BAE28 /* new_image.gif in Sources */ = {isa = PBXBuildFile; fileRef = C718747522E4D5F5006BAE28 /* new_image.gif */; };
+		C718747922E4D5FD006BAE28 /* seal.jpg in Sources */ = {isa = PBXBuildFile; fileRef = C718747422E4D5F5006BAE28 /* seal.jpg */; };
+		C718747A22E4D5FD006BAE28 /* smile.jpg in Sources */ = {isa = PBXBuildFile; fileRef = C718747222E4D5F5006BAE28 /* smile.jpg */; };
+		C718747B22E4D5FD006BAE28 /* ying.png in Sources */ = {isa = PBXBuildFile; fileRef = C718747322E4D5F5006BAE28 /* ying.png */; };
 		C75352DD22D00A2F0057E3D0 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C75352DC22D00A2F0057E3D0 /* main.cpp */; };
 		C75352ED22D00A6E0057E3D0 /* Graph.h in Sources */ = {isa = PBXBuildFile; fileRef = C75352E322D00A6E0057E3D0 /* Graph.h */; };
 		C75352EE22D00A6E0057E3D0 /* Window.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C75352E422D00A6E0057E3D0 /* Window.cpp */; };
@@ -33,6 +38,11 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		C718747222E4D5F5006BAE28 /* smile.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = smile.jpg; sourceTree = "<group>"; };
+		C718747322E4D5F5006BAE28 /* ying.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ying.png; sourceTree = "<group>"; };
+		C718747422E4D5F5006BAE28 /* seal.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = seal.jpg; sourceTree = "<group>"; };
+		C718747522E4D5F5006BAE28 /* new_image.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = new_image.gif; sourceTree = "<group>"; };
+		C718747622E4D5F5006BAE28 /* airplane.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = airplane.jpeg; sourceTree = "<group>"; };
 		C75352D922D00A2F0057E3D0 /* Ch13TheDrill */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Ch13TheDrill; sourceTree = BUILT_PRODUCTS_DIR; };
 		C75352DC22D00A2F0057E3D0 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		C75352E322D00A6E0057E3D0 /* Graph.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = Graph.h; path = ../Graph.h; sourceTree = "<group>"; };
@@ -45,8 +55,6 @@
 		C75352EA22D00A6E0057E3D0 /* std_lib_facilities.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = std_lib_facilities.h; path = ../std_lib_facilities.h; sourceTree = "<group>"; };
 		C75352EB22D00A6E0057E3D0 /* Graph.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = Graph.cpp; path = ../Graph.cpp; sourceTree = "<group>"; };
 		C75352EC22D00A6E0057E3D0 /* Simple_window.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = Simple_window.h; path = ../Simple_window.h; sourceTree = "<group>"; };
-		C7CBF70722D0D1C0003C0BFA /* seal.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = seal.jpg; sourceTree = "<group>"; };
-		C7CBF70822D0D319003C0BFA /* smile.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = smile.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,8 +97,11 @@
 		C75352DB22D00A2F0057E3D0 /* Ch13TheDrill */ = {
 			isa = PBXGroup;
 			children = (
-				C7CBF70822D0D319003C0BFA /* smile.jpg */,
-				C7CBF70722D0D1C0003C0BFA /* seal.jpg */,
+				C718747622E4D5F5006BAE28 /* airplane.jpeg */,
+				C718747522E4D5F5006BAE28 /* new_image.gif */,
+				C718747422E4D5F5006BAE28 /* seal.jpg */,
+				C718747222E4D5F5006BAE28 /* smile.jpg */,
+				C718747322E4D5F5006BAE28 /* ying.png */,
 				C75352DC22D00A2F0057E3D0 /* main.cpp */,
 			);
 			path = Ch13TheDrill;
@@ -152,6 +163,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C718747722E4D5FD006BAE28 /* airplane.jpeg in Sources */,
+				C718747822E4D5FD006BAE28 /* new_image.gif in Sources */,
+				C718747922E4D5FD006BAE28 /* seal.jpg in Sources */,
+				C718747A22E4D5FD006BAE28 /* smile.jpg in Sources */,
+				C718747B22E4D5FD006BAE28 /* ying.png in Sources */,
 				C75352ED22D00A6E0057E3D0 /* Graph.h in Sources */,
 				C75352EE22D00A6E0057E3D0 /* Window.cpp in Sources */,
 				C75352EF22D00A6E0057E3D0 /* GUI.cpp in Sources */,
@@ -302,6 +318,17 @@
 					"-framework",
 					Cocoa,
 				);
+				"OTHER_LDFLAGS[arch=*]" = (
+					"-L/usr/local/lib",
+					"-lfltk_images",
+					"-lfltk_jpeg",
+					"-lfltk_png",
+					"-lz",
+					"-lfltk",
+					"-lpthread",
+					"-framework",
+					Cocoa,
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				USER_HEADER_SEARCH_PATHS = /usr/local/include;
 				"USER_HEADER_SEARCH_PATHS[arch=*]" = /usr/local/include;
@@ -320,6 +347,17 @@
 				LIBRARY_SEARCH_PATHS = /usr/local/lib;
 				"LIBRARY_SEARCH_PATHS[arch=*]" = /usr/local/lib;
 				OTHER_LDFLAGS = (
+					"-L/usr/local/lib",
+					"-lfltk_images",
+					"-lfltk_jpeg",
+					"-lfltk_png",
+					"-lz",
+					"-lfltk",
+					"-lpthread",
+					"-framework",
+					Cocoa,
+				);
+				"OTHER_LDFLAGS[arch=*]" = (
 					"-L/usr/local/lib",
 					"-lfltk_images",
 					"-lfltk_jpeg",
