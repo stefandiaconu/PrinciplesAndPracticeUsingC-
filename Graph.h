@@ -9,6 +9,7 @@
 
 #include <FL/fl_draw.H>
 #include <FL/Fl_Image.H>
+#include <functional>
 #include "Point.h"
 #include "std_lib_facilities.h"
 
@@ -140,7 +141,8 @@ public:
 
 //------------------------------------------------------------------------------
 
-typedef double Fct(double);
+//typedef double Fct(double);
+typedef std::function<double (double)> Fct;
 
 class Shape  {        // deals with color and style, and holds sequence of lines 
 public:
