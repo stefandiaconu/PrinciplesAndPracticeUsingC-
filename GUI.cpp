@@ -19,6 +19,13 @@ void Button::attach(Window& win)
     pw->callback(reinterpret_cast<Fl_Callback*>(do_it), &win); // pass the window
     own = &win;
 }
+    
+bool Button::pressed()
+{
+    if (Fl::event_inside(pw))
+        return true;
+    else return false;
+}
 
 //------------------------------------------------------------------------------
 
