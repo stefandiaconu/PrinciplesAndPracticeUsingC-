@@ -85,7 +85,6 @@ void erase_item_id(vector<Item>& v, int i)
 
 bool is_int(const string& s)
 {
-    
     if (!s.empty() && std::find_if(s.begin(), s.end(), [](char c) { return !std::isdigit(c); }) == s.end())
         return true;
     else
