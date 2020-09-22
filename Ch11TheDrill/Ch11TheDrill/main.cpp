@@ -36,14 +36,14 @@ int main(int argc, const char * argv[]) {
 
     cout << dec;
     
-    cout << "First name:" << setw(14) << "\tStefan" << "\tLast name:" << setw(14) << "\tDiaconu" << "\tTelephone number:" << "\t07887241648" << "\tEmail: " << "\tstefan@email.com\n"
-    <<"First name:" << setw(10) << "\tGica" << "\tLast name:" << setw(14) << "\tDiaconu" << "\tTelephone number:" << "\t07887241648" << "\tEmail: " << "\tgica@email.com\n"
-    <<"First name:" << setw(14) << "\tCostel" << "\tLast name:" << setw(14) << "\tDiaconu" << "\tTelephone number:" << "\t07887241648" << "\tEmail: " << "\tcostel@email.com\n"
-    <<"First name:" << setw(14) << "\tIonel" << "\tLast name:" << setw(14) << "\tDiaconu" << "\tTelephone number:" << "\t07887241648" << "\tEmail: " << "\tionel@email.com\n"
-    <<"First name:" << setw(14) << "\tAurica" << "\tLast name:" << setw(14) << "\tDiaconu" << "\tTelephone number:" << "\t07887241648" << "\tEmail: " << "\taurica@email.com\n"
-    <<"First name:" << setw(14) << "\tGabriel" << "\tLast name:" << setw(14) << "\tHoreica" << "\tTelephone number:" << "\t07887241648" << "\tEmail: " << "\tgabriel@email.com\n"
-    <<"First name:" << setw(14) << "\tPetrica" << "\tLast name:" << setw(14) << "\tHoreica" << "\tTelephone number:" << "\t07887241648" << "\tEmail: " << "\tpetrica@email.com\n"
-    <<"First name:" << setw(14) << "\tPetricaPetrica" << "\tLast name:" << setw(14) << "\tHoreicaHoreica" << "\tTelephone number:" << "\t07887241648" << "\tEmail: " << "\tpetrica@email.com\n";
+    cout << "First name:" << setw(14) << "\tStefan" << "\tLast name:" << setw(14) << "\tDiaconu" << "\tTelephone number:" << "\t0777724111" << "\tEmail: " << "\tstefan@email.com\n"
+    <<"First name:" << setw(10) << "\tGica" << "\tLast name:" << setw(14) << "\tDiaconu" << "\tTelephone number:" << "\t0777724111" << "\tEmail: " << "\tgica@email.com\n"
+    <<"First name:" << setw(14) << "\tCostel" << "\tLast name:" << setw(14) << "\tDiaconu" << "\tTelephone number:" << "\t0777724111" << "\tEmail: " << "\tcostel@email.com\n"
+    <<"First name:" << setw(14) << "\tIonel" << "\tLast name:" << setw(14) << "\tDiaconu" << "\tTelephone number:" << "\t0777724111" << "\tEmail: " << "\tionel@email.com\n"
+    <<"First name:" << setw(14) << "\tAurica" << "\tLast name:" << setw(14) << "\tDiaconu" << "\tTelephone number:" << "\t0777724111" << "\tEmail: " << "\taurica@email.com\n"
+    <<"First name:" << setw(14) << "\tGabriel" << "\tLast name:" << setw(14) << "\tHoreica" << "\tTelephone number:" << "\t0777724111" << "\tEmail: " << "\tgabriel@email.com\n"
+    <<"First name:" << setw(14) << "\tPetrica" << "\tLast name:" << setw(14) << "\tHoreica" << "\tTelephone number:" << "\t0777724111" << "\tEmail: " << "\tpetrica@email.com\n"
+    <<"First name:" << setw(14) << "\tPetricaPetrica" << "\tLast name:" << setw(14) << "\tHoreicaHoreica" << "\tTelephone number:" << "\t0777724111" << "\tEmail: " << "\tpetrica@email.com\n";
     
     return 0;
 }
