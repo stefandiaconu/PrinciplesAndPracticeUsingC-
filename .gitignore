@@ -322,3 +322,5 @@ iOSInjectionProject/
 
 
 *.xcuserstate
+
+.DS_Store
